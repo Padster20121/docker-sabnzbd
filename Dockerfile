@@ -12,6 +12,6 @@ RUN add-apt-repository -y  ppa:jcfp/ppa && \
 
 VOLUME ["/config","/data"]
 
-EXPOSE 8080 9090
+EXPOSE 8082 9090
 
-CMD ["/usr/bin/sabnzbdplus","--config-file","/config","--console","--server", "0.0.0.0:8080"]
+CMD ["/usr/bin/sabnzbdplus","--config-file","/config","--console","--server", "0.0.0.0:8082"]
